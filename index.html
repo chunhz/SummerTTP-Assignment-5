@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dom Challenges III</title>
+</head>
+<body>
+  <div>
+    <button onclick = "addRow()">Add Row</button>
+    <button onclick = "addCol()">Add Column</button> 
+    <button onclick = "removeRow()">Remove Row</button> 
+    <button onclick = "removeCol()">Remove Column</button> 
+    <select onchange = "selectColor()" id="selectColor"> 
+      <option value = "red">Red</option>
+      <option value = "green">Green</option>
+      <option value = "blue">Blue</option>
+  </select>
+    <button onclick = "fillAllUncolorCells()">Fill All Uncolored Cells</button> 
+    <button onclick = "fillAllCells()">Fill All Current Cells</button> 
+    <button onclick = "restoreAllCells()">Clear/Restore All Cells</button> 
+    
+</div>
+
+
+<table id = "table"> </table>
+
+<script src="script.js"></script>
+</body>
+</html>
